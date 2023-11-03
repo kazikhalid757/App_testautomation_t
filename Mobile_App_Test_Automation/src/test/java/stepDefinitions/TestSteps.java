@@ -26,11 +26,11 @@ public class TestSteps {
 
     @Given("Check home button is availablel")
     public void checkHomeButtonIsAvailablel() throws InterruptedException {
-        Thread.sleep(1000);
-        testingApp.get_start().click();
         Thread.sleep(10000);
+        testingApp.get_start().click();
+        Thread.sleep(50000);
         Assert.assertTrue(testingApp.home_button_f().isDisplayed());
-        Thread.sleep(1000);
+        Thread.sleep(10000);
     }
 
     @When("Click  home button")
@@ -40,8 +40,9 @@ public class TestSteps {
 
     @Given("Check Play  button is availablel")
     public void checkPlayButtonIsAvailablel() throws InterruptedException {
+        Thread.sleep(10000);
         testingApp.get_start().click();
-        Thread.sleep(3000);
+        Thread.sleep(50000);
         Assert.assertTrue(testingApp.play_button().isDisplayed());
         Thread.sleep(1000);
     }
@@ -53,8 +54,9 @@ public class TestSteps {
 
     @Given("Check  Menu Bar button is availablel")
     public void checkMenuBarButtonIsAvailablel() throws InterruptedException {
+        Thread.sleep(10000);
         testingApp.get_start().click();
-        Thread.sleep(3000);
+        Thread.sleep(50000);
         Assert.assertTrue(testingApp.manu_button().isDisplayed());
         Thread.sleep(1000);
     }
@@ -66,8 +68,9 @@ public class TestSteps {
 
     @Given("Check Search Bar button is availablel")
     public void checkSearchBarButtonIsAvailablel() throws InterruptedException {
+        Thread.sleep(10000);
         testingApp.get_start().click();
-        Thread.sleep(3000);
+        Thread.sleep(50000);
         testingApp.manu_button().click();
         Thread.sleep(1000);
         Assert.assertTrue(testingApp.Search_Bar().isDisplayed());
@@ -82,16 +85,18 @@ public class TestSteps {
 
     @Given("Click any post")
     public void clickAnyPost() throws InterruptedException {
+        Thread.sleep(10000);
         testingApp.get_start().click();
-        Thread.sleep(5000);
+        Thread.sleep(50000);
         testingApp.post().click();
 
     }
 
     @Then("Check share button is available")
     public void checkShareButtonIsAvailable() throws InterruptedException {
+        Thread.sleep(10000);
         testingApp.get_start().click();
-        Thread.sleep(5000);
+        Thread.sleep(50000);
         testingApp.post().click();
         Assert.assertTrue(testingApp.share().isDisplayed());
     }
@@ -111,8 +116,9 @@ public class TestSteps {
 
     @Given("Check Play button is available")
     public void checkPlayButtonIsAvailable() throws InterruptedException {
+        Thread.sleep(10000);
         testingApp.get_start().click();
-        Thread.sleep(5000);
+        Thread.sleep(50000);
         testingApp.play_button().click();
         testingApp.VIDEO_tap().click();
 
@@ -121,10 +127,11 @@ public class TestSteps {
 
     @Given("Click menu bar")
     public void clickMenuBar() throws InterruptedException {
+        Thread.sleep(10000);
         testingApp.get_start().click();
-        Thread.sleep(5000);
+        Thread.sleep(50000);
         testingApp.manu_button().click();
-        Thread.sleep(2000);
+        Thread.sleep(20000);
         testingApp.settingsBtn().click();
     }
 
@@ -148,8 +155,9 @@ public class TestSteps {
 
     @Given("Click manu bar")
     public void clickManuBar() throws InterruptedException {
+        Thread.sleep(10000);
         testingApp.get_start().click();
-        Thread.sleep(5000);
+        Thread.sleep(50000);
         testingApp.manu_button().click();
 
 
@@ -162,7 +170,8 @@ public class TestSteps {
 
     @When("Click Setteing button is available")
     public void clickSetteingButtonIsAvailable() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(10000);
+
         testingApp.settingsBtn().click();
     }
 
@@ -178,8 +187,9 @@ public class TestSteps {
 
     @When("Click Feedbackbutton is available")
     public void clickFeedbackbuttonIsAvailable() throws InterruptedException {
+        Thread.sleep(10000);
         testingApp.get_start().click();
-        Thread.sleep(5000);
+        Thread.sleep(50000);
         testingApp.manu_button().click();
         Thread.sleep(2000);
         testingApp.feedbackBtn().click();
@@ -192,10 +202,11 @@ public class TestSteps {
 
     @Given("Check text box")
     public void checkTextBox() throws InterruptedException {
+        Thread.sleep(10000);
         testingApp.get_start().click();
-        Thread.sleep(5000);
+        Thread.sleep(50000);
         testingApp.manu_button().click();
-        Thread.sleep(2000);
+        Thread.sleep(20000);
         testingApp.feedbackBtn().click();
     }
 
